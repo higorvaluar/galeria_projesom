@@ -42,7 +42,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  margin-bottom: 20px;
+  margin-top: -20px;
+  margin-bottom: 80px;
   text-align: center;
 }
 
@@ -133,4 +134,77 @@ input, textarea, button {
 
 textarea {
   resize: vertical;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.button-group button,
+.button-group a {
+  width: 200px;
+  padding: 12px 0;
+  font-size: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+  box-sizing: border-box;
+}
+
+.btn-vermelho {
+  background-color: #E10600;
+}
+
+.btn-vermelho:hover {
+  background-color: #b30000;
+}
+
+.btn-azul {
+  background-color: #007BFF;
+}
+
+.btn-azul:hover {
+  background-color: #0056b3;
+}
+
+.file-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-label {
+  background-color: #E10600;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom-file-label:hover {
+  background-color: #b30000;
+}
+
+#fileName {
+  font-size: 0.9rem;
+  color: #fff;
 }

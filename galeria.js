@@ -102,3 +102,11 @@ form.addEventListener('submit', function(e) {
 });
 
 renderGallery();
+
+const mediaFileInput = document.getElementById('mediaFile');
+const fileNameSpan = document.getElementById('fileName');
+
+mediaFileInput.addEventListener('change', function () {
+  const fileName = mediaFileInput.files[0]?.name || "Nenhum arquivo escolhido";
+  fileNameSpan.textContent = fileName;
+});

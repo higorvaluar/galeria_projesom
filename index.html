@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,15 +9,23 @@
   <div class="container">
     <h1>ADMIN - Galeria Projesom</h1>
     <form id="mediaForm">
-      <input type="file" id="mediaFile" accept="image/*, video/*" required>
+      <div class="file-input-wrapper">
+          <input type="file" id="mediaFile" accept="image/*, video/*" required>
+          <label for="mediaFile" class="custom-file-label">Selecionar arquivo</label>
+          <span id="fileName">Nenhum arquivo escolhido</span>
+      </div>
       <input type="text" id="mediaTitle" placeholder="Título" required>
       <textarea id="mediaDesc" placeholder="Descrição" required></textarea>
-      <button type="submit">Adicionar</button>
+
+      <div class="button-group">
+        <button type="submit" class="btn-vermelho">Adicionar</button>
+        <a href="https://higorvaluar.github.io/galeria_projesom/galeria-publica.html" target="_blank" class="btn-azul">Ver Galeria Pública</a>
+      </div>
     </form>
 
     <div class="gallery" id="gallery"></div>
-
   </div>
+
   <script src="galeria.js"></script>
 </body>
 </html>
